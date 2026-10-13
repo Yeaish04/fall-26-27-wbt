@@ -1,140 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <form method="post">
-            <table>
-                
-                    <tr>
-                        <th>
-                         Donor Information
-                        </th>
-                    </tr>
-                <tr><td><label>First Name* </label></td><td><input type="text" id="fname" name="fname" required></td></tr>
+        <table>
 
-                
-                <tr><td><label>Last Name* </label></td><td><input type="text" id="lname" name="lname" required></td></tr>
-
-                <tr><td><label>Company </label></td><td><input type="text" id="cmp" name="cmp"></td></tr>
-
-                <tr><td><label>Address 1* </label></td><td><input type="text" id="add1" name="add1" required></td></tr>
-
-                <tr><td><label>Address 2 </label></td><td><input type="text" id="add2" name="add2"></td></tr>
-
-                <tr><td><label>City* </label></td><td><input type="text" id="ct" name="ct" required></td></tr>
-
-                <tr><td><label for="st">state </label></td>
-                    <td>
-                        <select id="st" name="st">
-                            <option>dhaka</option>
-                            <option>chittagong</option>
-                            <option>sylhet</option>
-                            <option>rajshahi</option>
-                            <option>noakhali</option>
-                        </select></td></tr>
-
-                <tr><td><label>Zip Code* </label></td><td><input type="number" id="zp" name="zp" required></td></tr>
-
-                        <tr><td><label for="country">Country </label></td>
-                    <td>
-                        <select id="st" name="st">
-                            <option>Bangladesh</option>
-                            <option>India</option>
-                            <option>United State of Noakhali</option>
-                            <option>Uganda</option>
-                            <option>United </option>
-                        </select>
+            <h2>Donor Information</h2>
+            <tr>
+                <td><label>First Name* </label></td>
+                <td><input type="text" id="fname" name="fname" required></td>
+            </tr>
 
 
+            <tr>
+                <td><label>Last Name* </label></td>
+                <td><input type="text" id="lname" name="lname" required></td>
+            </tr>
 
-                <tr><td><label>Phone </label></td><td><input type="tel" id="ph" name="ph"></td></tr>
+            <tr>
+                <td><label>Company </label></td>
+                <td><input type="text" id="cmp" name="cmp"></td>
+            </tr>
 
-                <tr><td><label>Fax </label></td><td><input type="tel" id="fx" name="fx"></td></tr>
+            <tr>
+                <td><label>Address 1* </label></td>
+                <td><input type="text" id="add1" name="add1" required></td>
+            </tr>
 
-                <tr><td><label>Email* </label></td><td><input type="email" id="em" name="em" required></td></tr>
+            <tr>
+                <td><label>Address 2 </label></td>
+                <td><input type="text" id="add2" name="add2"></td>
+            </tr>
 
-                <tr><td><label>Donation Amount*<br>(check a button or type in your amount) </label></td>
-                    <td>
-                    <input type="radio" name="none" value="none">NONE
-                    <input type="radio" name="50" value="50">$50
-                    <input type="radio" name="75" value="75">$75
-                    <input type="radio" name="100" value="100">$100
-                    <input type="radio" name="250" value="250">$250
-                    <input type="radio" name="other" value="other">Other
+            <tr>
+                <td><label>City* </label></td>
+                <td><input type="text" id="ct" name="ct" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="st">state </label></td>
+                <td>
+                    <select id="st" name="st">
+                        <option>dhaka</option>
+                        <option>chittagong</option>
+                        <option>sylhet</option>
+                        <option>rajshahi</option>
+                        <option>noakhali</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Zip Code* </label></td>
+                <td><input type="number" id="zp" name="zp" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="country">Country </label></td>
+                <td>
+                    <select id="st" name="st">
+                        <option>Bangladesh</option>
+                        <option>India</option>
+                        <option>United State of Noakhali</option>
+                        <option>Uganda</option>
+                        <option>United </option>
+                    </select>
+
+
+
+            <tr>
+                <td><label>Phone </label></td>
+                <td><input type="tel" id="ph" name="ph"></td>
+            </tr>
+
+            <tr>
+                <td><label>Fax </label></td>
+                <td><input type="tel" id="fx" name="fx"></td>
+            </tr>
+
+            <tr>
+                <td><label>Email* </label></td>
+                <td><input type="email" id="em" name="em" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Donation Amount*<br>(check a button or type in your amount) </label></td>
+                <td>
+                    <input type="radio" name="rd1" value="none">NONE
+                    <input type="radio" name="rd1" value="50">$50
+                    <input type="radio" name="rd1" value="75">$75
+                    <input type="radio" name="rd1" value="100">$100
+                    <input type="radio" name="rd1" value="250">$250
+                    <input type="radio" name="rd1" value="other">Other
                     <br>
-                    
+
                     <label>Other Amount $ </label><input type="text" id="oam" name="oam">
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
-                
-                
 
-                <tr>
-                    <td>
-                        <label>Recurring Donation </label><br>(Check if yes)
-                    </td>
-                    <td>
-                        <input type="checkbox" value="rd">I am interested in giving on a regular basis.
-                        <br>
-                        <label>Monthly Credit Card $ </label><input type="text" id="mcc" name="mcc">
-                        <label>for </label><input type="text" id="fr" name="fr"><label>Months</label>
-                    </td>
-                </tr>
 
-            </table>
-            
-            <table>
-                <tr>
-                    <th>
-                        Honorarium and Memorial Donation Information
-                    </th>
-                </tr>
 
-                
-                <tr><td><label>I would like to make this donation</label></td>
-                    <td>
-                    <input type="radio" name="thonour" value="thonour">To Honor
+            <tr>
+                <td>
+                    <label>Recurring Donation </label><br>(Check if yes)
+                </td>
+                <td>
+                    <input type="checkbox" value="rd">I am interested in giving on a regular basis.
                     <br>
-                    <input type="radio" name="tmem" value="tmem">In Memory of
-                    
-                </tr>
+                    <label>Monthly Credit Card $ </label><input type="text" id="mcc" name="mcc">
+                    <label>for </label><input type="text" id="fr" name="fr"><label>Months</label>
+                </td>
+            </tr>
+
+        </table>
+        <br><br>
+        <table>
+
+            <h2>Honorarium and Memorial Donation Information</h2>
 
 
-                <tr><td><label>Name </label></td><td><input type="text" id="name" name="name"></td></tr>
+            <tr>
+                <td><label>I would like to make this donation</label></td>
+                <td>
+                    <input type="radio" name="rd2" value="thonour">To Honor
+                    <br>
+                    <input type="radio" name="rd2" value="tmem">In Memory of
 
-                
-                <tr><td><label>Acknowledge Donation to </label></td><td><input type="text" id="adt" name="adt"></td></tr>
+            </tr>
 
-                <tr><td><label>address </label></td><td><input type="text" id="add" name="add"></td></tr>
 
-                <tr><td><label>City* </label></td><td><input type="text" id="ct1" name="ct1" required></td></tr>
+            <tr>
+                <td><label>Name </label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
 
-                <tr><td><label for="st1">state </label></td>
-                    <td>
-                        <select id="st1" name="st1">
-                            <option>dhaka</option>
-                            <option>chittagong</option>
-                            <option>sylhet</option>
-                            <option>rajshahi</option>
-                            <option>noakhali</option>
-                        </select></td></tr>
 
-                <tr><td><label>Zip Code* </label></td><td><input type="number" id="zp1" name="zp1"></td></tr>
-              
-                
-            
-            </table>
-            <input type ="submit" value="Register">
-            <input type="reset">
-            </form>
-         
+            <tr>
+                <td><label>Acknowledge Donation to </label></td>
+                <td><input type="text" id="adt1" name="adt1"></td>
+            </tr>
+
+            <tr>
+                <td><label>address </label></td>
+                <td><input type="text" id="add" name="add"></td>
+            </tr>
+
+            <tr>
+                <td><label>City* </label></td>
+                <td><input type="text" id="ct1" name="ct1" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="st1">state </label></td>
+                <td>
+                    <select id="st1" name="st1">
+                        <option>dhaka</option>
+                        <option>chittagong</option>
+                        <option>sylhet</option>
+                        <option>rajshahi</option>
+                        <option>noakhali</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Zip Code* </label></td>
+                <td><input type="number" id="zp1" name="zp1"></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
 
 
 </body>
+
 </html>
